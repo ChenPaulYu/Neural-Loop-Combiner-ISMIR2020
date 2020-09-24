@@ -8,9 +8,9 @@ Music producers who use loops may have access to thousands in loop libraries, bu
 ### Demo audio
 
 1. Query loop (`Query`)
-2. Loop combination made by human (`Original`)
-3. Generated loop combination by `AutoMashupper`
-4. Generated loop combination by `CNN+reverse`
+2. Loop combination made by human based on Query loop (`Original`)
+3. Generated loop combination based on Query loop by `AutoMashupper`
+4. Generated loop combination based on Query loop by `CNN+reverse`
 
 |   |Query|Original|AutoMashUpper|CNN+Reverse|
 |1.|<audio src="result/Q1/src.wav" controls="" preload=""></audio>|<audio src="result/Q1/ori.wav" controls="" preload=""></audio>|<audio src="result/Q1/atp.wav" controls="" preload=""></audio>|<audio src="result/Q1/cnn.wav" controls="" preload=""></audio>|
@@ -24,7 +24,7 @@ Music producers who use loops may have access to thousands in loop libraries, bu
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NfYeEZ6h0fc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-PS: [Slide](https://www.slideshare.net/secret/Ls1MW17LWmukyK)
+ps: [Slide](https://www.slideshare.net/secret/Ls1MW17LWmukyK)
 
 
 ### Contact 
