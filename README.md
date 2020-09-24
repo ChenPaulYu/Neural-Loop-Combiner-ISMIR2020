@@ -1,1 +1,1 @@
-# Guitar-Transformer-Demo
+# Neural-Loop-Combiner-Demo
