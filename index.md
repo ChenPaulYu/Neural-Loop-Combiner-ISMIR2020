@@ -1,17 +1,18 @@
-This is the demo page for the paper [AUTOMATIC COMPOSITION OF GUITAR TABS BY TRANSFORMERS AND GROOVE MODELING](https://arxiv.org/abs/2008.01431)
+This is the demo page for the paper [Neural Loop Combiner: Neural Network Models for Assessing the Compatibility of Loops](https://arxiv.org/abs/2008.02011)
 
 ## Abstract
-Recent years have witnessed great progress in using deep learning algorithms to learn to compose music in the form of a MIDI file.  However, whether such algorithms apply equally well to compose guitar tabs, which are quite different from MIDIs, remain relatively unexplored. To address this, we build a model for composing fingerstyle guitar tabs with Transformer-XL, a neural sequence model architecture. With this model, we investigate the following research questions. First, whether the neural net generates note sequences with meaningful  note-string combinations, which is important for the guitar but not other instruments such as the piano. Second, whether it generates compositions with coherent rhythmic groove, crucial for fingerstyle guitar music. And, finally, how pleasant the composed music is in comparison to real, human-made compositions. Our work provides preliminary empirical evidence of the promise of deep learning for tab composition, and suggests areas for future study.
+Music producers who use loops may have access to thousands in loop libraries, but finding ones that are compatible is a time-consuming process; we hope to reduce this burden with automation. State-of-the-art systems for estimating compatibility, such as AutoMashUpper, are mostly rule-based and could be improved on with machine learning. To train a model, we need a large set of loops with ground truth compatibility values. No such dataset exists, so we extract loops from existing music to obtain positive examples of compatible loops, and propose and compare various strategies for choosing negative examples. For reproducibility, we curate data from the Free Music Archive. Using this data, we investigate two types of model architectures for estimating the compatibility of loops: one based on a Siamese network, and the other a pure convolutional neural network (CNN). We conducted a user study in which participants rated the quality of the combinations suggested by each model, and found the CNN to outperform the Siamese network. Both model-based approaches outperformed the rule-based one. We have opened source the code for building the models and the dataset.
 
 ### Demo audio
 Audio in the same row share identical first 4 bars prompt. ***No grooving*** and ***Hard grooving***  model are asked to generate 16-bar continuations based on the prompt input.
 
-|   |Real data|No grooving|Hard grooving|
-|1.|<audio src="result/real data/0.wav" controls="" preload=""></audio>|<audio src="result/no grooving/0.wav" controls="" preload=""></audio>|<audio src="result/hard grooving/0.wav" controls="" preload=""></audio>|
-|2.|<audio src="result/real data/1.wav" controls="" preload=""></audio>|<audio src="result/no grooving/1.wav" controls="" preload=""></audio>|<audio src="result/hard grooving/1.wav" controls="" preload=""></audio>|
-|3.|<audio src="result/real data/2.wav" controls="" preload=""></audio>|<audio src="result/no grooving/2.wav" controls="" preload=""></audio>|<audio src="result/hard grooving/2.wav" controls="" preload=""></audio>|
-|4.|<audio src="result/real data/3.wav" controls="" preload=""></audio>|<audio src="result/no grooving/3.wav" controls="" preload=""></audio>|<audio src="result/hard grooving/3.wav" controls="" preload=""></audio>|
-|5.|<audio src="result/real data/4.wav" controls="" preload=""></audio>|<audio src="result/no grooving/4.wav" controls="" preload=""></audio>|<audio src="result/hard grooving/4.wav" controls="" preload=""></audio>|
+|   |Query loop|Original|AutoMashupper|CNN+reverse|
+|1.|<audio src="result/Q1/src.wav" controls="" preload=""></audio>|<audio src="result/Q1/ori.wav" controls="" preload=""></audio>|<audio src="result/Q1/atp.wav" controls="" preload=""></audio>|<audio src="result/Q1/cnn.wav" controls="" preload=""></audio>|
+|2.|<audio src="result/Q2/src.wav" controls="" preload=""></audio>|<audio src="result/Q2/ori.wav" controls="" preload=""></audio>|<audio src="result/Q2/atp.wav" controls="" preload=""></audio>|<audio src="result/Q2/cnn.wav" controls="" preload=""></audio>|
+|3.|<audio src="result/Q3/src.wav" controls="" preload=""></audio>|<audio src="result/Q3/ori.wav" controls="" preload=""></audio>|<audio src="result/Q3/atp.wav" controls="" preload=""></audio>|<audio src="result/Q3/cnn.wav" controls="" preload=""></audio>|
+|4.|<audio src="result/Q4/src.wav" controls="" preload=""></audio>|<audio src="result/Q4/ori.wav" controls="" preload=""></audio>|<audio src="result/Q4/atp.wav" controls="" preload=""></audio>|<audio src="result/Q4/cnn.wav" controls="" preload=""></audio>|
+|5.|<audio src="result/Q5/src.wav" controls="" preload=""></audio>|<audio src="result/Q5/ori.wav" controls="" preload=""></audio>|<audio src="result/Q5/atp.wav" controls="" preload=""></audio>|<audio src="result/Q5/cnn.wav" controls="" preload=""></audio>|
+|6.|<audio src="result/Q6/src.wav" controls="" preload=""></audio>|<audio src="result/Q6/ori.wav" controls="" preload=""></audio>|<audio src="result/Q6/atp.wav" controls="" preload=""></audio>|<audio src="result/Q6/cnn.wav" controls="" preload=""></audio>|
 
 ### Demo Video
 This video recording is a guitarist from our team playing a generated tab which is generated from scratch.
@@ -19,4 +20,4 @@ This video recording is a guitarist from our team playing a generated tab which 
 </iframe>
 
 ### Contact 
-Yu-Hua Chen f08946011@ntu.edu.tw
+Bo-Yu Chen bernie40916@gmail.com
