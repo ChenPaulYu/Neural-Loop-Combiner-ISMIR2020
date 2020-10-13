@@ -5,6 +5,8 @@ Music producers who use loops may have access to thousands in loop libraries, bu
 
 ### Demo audio
 
+<hr>
+
 1. Query loop (`Query`)
 2. Loop combination made by human based on Query loop (`Original`)
 3. Generated loop combination based on Query loop by `AutoMashupper`
@@ -18,22 +20,18 @@ Music producers who use loops may have access to thousands in loop libraries, bu
 |5.|<audio src="result/Q5/src.wav" controls="" preload=""></audio>|<audio src="result/Q5/ori.wav" controls="" preload=""></audio>|<audio src="result/Q5/atp.wav" controls="" preload=""></audio>|<audio src="result/Q5/cnn.wav" controls="" preload=""></audio>|
 |6.|<audio src="result/Q6/src.wav" controls="" preload=""></audio>|<audio src="result/Q6/ori.wav" controls="" preload=""></audio>|<audio src="result/Q6/atp.wav" controls="" preload=""></audio>|<audio src="result/Q6/cnn.wav" controls="" preload=""></audio>|
 
-### Poster & Video [here](www.slideshare.net/secret/Ls1MW17LWmukyK)
+### Others
+
+<hr>
+
+1. [Poster & Video](www.slideshare.net/secret/Ls1MW17LWmukyK)
+2. [Code](https://github.com/mir-aidj/neural-loop-combiner): Still work in progress
+3. Interactive Web App: Beats with You [[demo]](http://paulyuchen.com/beats-with-you/) [[code]](https://github.com/ChenPaulYu/beats-with-you)
 
 
-
-### Implementation
-
-[Code](https://github.com/mir-aidj/neural-loop-combiner) will be here, but still work in progress.... 
-
-
-
-### [Beats with You](http://paulyuchen.com/beats-with-you/): Interactive Web App Power By "Neural Loop Combiner"
-
-Play it if you are interested in it. [[demo]](http://paulyuchen.com/beats-with-you/) [[code]](https://github.com/ChenPaulYu/beats-with-you)
-
-### 
 
 ### Contact 
+
+<hr>
 
 Bo-Yu Chen bernie40916@gmail.com
