@@ -3,8 +3,6 @@ This is the demo page for the paper [Neural Loop Combiner: Neural Network Models
 ## Abstract
 Music producers who use loops may have access to thousands in loop libraries, but finding ones that are compatible is a time-consuming process; we hope to reduce this burden with automation. State-of-the-art systems for estimating compatibility, such as AutoMashUpper, are mostly rule-based and could be improved on with machine learning. To train a model, we need a large set of loops with ground truth compatibility values. No such dataset exists, so we extract loops from existing music to obtain positive examples of compatible loops, and propose and compare various strategies for choosing negative examples. For reproducibility, we curate data from the Free Music Archive. Using this data, we investigate two types of model architectures for estimating the compatibility of loops: one based on a Siamese network, and the other a pure convolutional neural network (CNN). We conducted a user study in which participants rated the quality of the combinations suggested by each model, and found the CNN to outperform the Siamese network. Both model-based approaches outperformed the rule-based one. We have opened source the code for building the models and the dataset.
 
-### [Interactive Demo Website](https://paulyuchen.com/mashup-ml-client/)
-
 ### Demo audio
 
 1. Query loop (`Query`)
@@ -20,12 +18,22 @@ Music producers who use loops may have access to thousands in loop libraries, bu
 |5.|<audio src="result/Q5/src.wav" controls="" preload=""></audio>|<audio src="result/Q5/ori.wav" controls="" preload=""></audio>|<audio src="result/Q5/atp.wav" controls="" preload=""></audio>|<audio src="result/Q5/cnn.wav" controls="" preload=""></audio>|
 |6.|<audio src="result/Q6/src.wav" controls="" preload=""></audio>|<audio src="result/Q6/ori.wav" controls="" preload=""></audio>|<audio src="result/Q6/atp.wav" controls="" preload=""></audio>|<audio src="result/Q6/cnn.wav" controls="" preload=""></audio>|
 
-### Demo Video
+### Poster & Video [here](www.slideshare.net/secret/Ls1MW17LWmukyK)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NfYeEZ6h0fc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-ps: [Slide](https://www.slideshare.net/secret/Ls1MW17LWmukyK)
 
+### Implementation
+
+[Code](https://github.com/mir-aidj/neural-loop-combiner) will be here, but still work in progress.... 
+
+
+
+### [Beats with You](http://paulyuchen.com/beats-with-you/): Interactive Web App Power By "Neural Loop Combiner"
+
+Play it if you are interested in it. [[demo]](http://paulyuchen.com/beats-with-you/) [[code]](https://github.com/ChenPaulYu/beats-with-you)
+
+### 
 
 ### Contact 
+
 Bo-Yu Chen bernie40916@gmail.com
