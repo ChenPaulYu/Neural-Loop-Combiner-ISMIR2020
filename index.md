@@ -24,7 +24,7 @@ Music producers who use loops may have access to thousands in loop libraries, bu
 
 <hr>
 
-1. [Poster & Video](www.slideshare.net/secret/Ls1MW17LWmukyK)
+1. [Poster & Video](https://program.ismir2020.net/poster_3-13.html)
 2. [Code](https://github.com/mir-aidj/neural-loop-combiner): Still work in progress
 3. Interactive Web App: Beats with You [[demo]](http://paulyuchen.com/beats-with-you/) [[code]](https://github.com/ChenPaulYu/beats-with-you)
 
